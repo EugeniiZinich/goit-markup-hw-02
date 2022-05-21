@@ -3,7 +3,7 @@
 --second-brand-color: #FFFFFF;
 --main-color: #212121;
 --secondary-color: #757575;
---footer-color: rgba(255, 255, 255, 0.6);
+--grey-rgba-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -23,7 +23,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
+    font-size: 14px;  
 }
 
 /* logo style */
@@ -49,6 +50,11 @@ text-decoration: none;
          /* ---------------- STYLE index.html -------------------- */
 
 /* ---Heder style--- */
+
+.item .current {
+    color: var(--brand-color);
+}
+
 .header-page .header-contact,
 .header-page .header-nav{
 list-style: none;
@@ -57,7 +63,6 @@ list-style: none;
 .navigation-link{
     color: inherit;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
     letter-spacing: 0.02em;    
@@ -72,7 +77,6 @@ list-style: none;
     color: var(--secondary-color);
     text-decoration: none; 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em; 
 }
@@ -83,7 +87,7 @@ list-style: none;
 }
 
 /* ---HERO STYLE--- */
-.hero h1{
+.hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -97,14 +101,13 @@ list-style: none;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    background-color: var(--brand-color);
     color: var(--second-brand-color);
     cursor: pointer; 
+    background-color: var(--secondary-color);
 }
 
-.hero .hero-btn:hover,
 .hero .hero-btn:hover{
- 
+ background-color: var(--brand-color);
 }
 
 
@@ -113,20 +116,18 @@ list-style: none;
 }
 
 .advantage-title {
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--main-color);
 }
 .advantage-subtitle {
-    font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-color);
 }
 
 
 /* ---ABOUT STYLE--- */
-.about h2{
+.about-title{
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
@@ -142,19 +143,19 @@ text-align: center;
     list-style: none;
 }
 
-.team h2{
+.team-title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
 
-.team-title {
+.team-subtitle{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
-.team-subtitle {
+.team-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -179,30 +180,37 @@ text-align: center;
     font-style: normal;
 }
 
-
-.footer-contact{
-list-style: none;
+.footer-contact-link{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--grey-rgba-color);
+    text-decoration: none;
 }
 
-.footer-contact .contact-link:hover,
-.footer-contact .contact-link:focus{
+.footer-contact{
+    list-style: none;
+}
+
+.footer-contact .footer-contact-link:hover,
+.footer-contact .footer-contact-link:focus{
     color: var(--brand-color); 
 }
 
 .location{
-    font-size: 14px;
     line-height: 1.71;
     color: var(--second-brand-color);
     text-decoration: none;
 }
 
-.location:hover, .location:focus{
+/* .location:hover, .location:focus{
 
-}
+} */
 
 
 
 /* ---------------- STYLE PORTFOLIO.html -------------------- */
+
+
 
 .filter-list .filter-btn:hover,
 .filter-list .filter-btn:focus{

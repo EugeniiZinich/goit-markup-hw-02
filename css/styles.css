@@ -1,3 +1,15 @@
+html{
+   box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
 :root{
 --brand-color: #2196F3;
 --second-brand-color: #FFFFFF;
@@ -53,6 +65,7 @@ text-decoration: none;
 
 .item .current {
     color: var(--brand-color);
+    
 }
 
 .header-page .header-contact,
@@ -103,7 +116,7 @@ list-style: none;
     letter-spacing: 0.06em;
     color: var(--second-brand-color);
     cursor: pointer; 
-    background-color: var(--secondary-color);
+    background-color: var(--brand-color);
 }
 
 .hero .hero-btn:hover{
@@ -116,6 +129,7 @@ list-style: none;
 }
 
 .advantage-title {
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--main-color);
@@ -234,6 +248,11 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 color: var(--main-color);
+}
+
+.item .current-btn{
+    background-color: var(--brand-color);
+    color: var(--second-brand-color);
 }
 
 /* ---SECTION WORK STYLE--- */
